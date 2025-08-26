@@ -1,0 +1,30 @@
+# dependencies
+/vendor/
+/node_modules/
+
+# env & secrets
+.env
+.env.*.local
+.phpunit.result.cache
+
+# storage (logs, cache)
+storage/*.key
+storage/*.log
+storage/*.cache
+storage/framework/*
+!storage/framework/.gitignore
+storage/logs/*
+!storage/logs/.gitignore
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# IDE/OS
+/.idea/
+/.vscode/
+/.DS_Store
+Thumbs.db
+
+# swagger generated files (선택)
+public/docs/
+storage/api-docs/*.yaml
+storage/api-docs/*.json
